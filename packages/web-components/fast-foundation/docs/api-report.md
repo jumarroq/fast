@@ -1504,9 +1504,7 @@ export class Picker extends FoundationElement {
 export class PickerList extends FoundationElement {
     // @internal (undocumented)
     connectedCallback(): void;
-    // (undocumented)
     inputElement: HTMLInputElement;
-    // (undocumented)
     itemsPlaceholderElement: Node;
     label: string;
     labelledby: string;
@@ -1516,14 +1514,9 @@ export class PickerList extends FoundationElement {
 export class PickerListItem extends FoundationElement {
     // @internal (undocumented)
     connectedCallback(): void;
-    // (undocumented)
     contentsTemplate: ViewTemplate;
     // @internal (undocumented)
     disconnectedCallback(): void;
-    // (undocumented)
-    handleFocusin(e: FocusEvent): void;
-    // (undocumented)
-    handleFocusout(e: FocusEvent): void;
     // (undocumented)
     handleItemClick: (e: MouseEvent) => boolean;
     // (undocumented)
@@ -1541,21 +1534,20 @@ export const pickerListTemplate: (context: any, definition: any) => ViewTemplate
 export class PickerMenu extends FoundationElement {
     // @internal (undocumented)
     connectedCallback(): void;
-    // @internal (undocumented)
+    // @internal
     footerElements: HTMLElement[];
     // (undocumented)
     footerElementsChanged(): void;
-    // @internal (undocumented)
+    // @internal
     headerElements: HTMLElement[];
     // (undocumented)
     headerElementsChanged(): void;
-    // @internal (undocumented)
+    // @internal
     menuElements: HTMLElement[];
     // (undocumented)
     menuElementsChanged(): void;
     // @internal
     optionElements: HTMLElement[];
-    // (undocumented)
     suggestionsAvailableText: string;
     }
 
@@ -1567,10 +1559,6 @@ export class PickerMenuOption extends FoundationElement {
     contentsTemplate: ViewTemplate;
     // @internal (undocumented)
     disconnectedCallback(): void;
-    // (undocumented)
-    handleFocusin(e: FocusEvent): void;
-    // (undocumented)
-    handleFocusout(e: FocusEvent): void;
     // (undocumented)
     handleOptionClick: (e: MouseEvent) => boolean;
     value: string;
